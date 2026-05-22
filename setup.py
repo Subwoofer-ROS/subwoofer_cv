@@ -30,9 +30,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "FaceDetection = subwoofer.face_detection:main",
-            "BackgroundSubtraction = subwoofer.image_motion:main",
-            "EdgeDetection = subwoofer.edge_detection:main",
+            "FaceDetection = subwoofer_cv.face_detection:main",
+            "BackgroundSubtraction = subwoofer_cv.image_motion:main",
+            "EdgeDetection = subwoofer_cv.edge_detection:main",
+            "DepthEstimation = subwoofer_cv.depth_estimation:main",
         ],
     },
 )
